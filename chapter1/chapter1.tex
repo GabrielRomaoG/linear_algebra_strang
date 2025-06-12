@@ -1,0 +1,215 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+\usepackage{amsmath}
+
+\title{\Huge{Solutions for Introduction to Linear Algebra 5th -
+Gilbert Strang}\\ Chapter1 }
+\author{\huge{Gabriel Romão}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\pdfbookmark[section]{ \contentsname }{ toc }
+\tableofcontents
+
+\chapter{Problem Set 1.1}
+
+\begin{question}{Describe geometrically (line, plane or all of
+    $\mathbb{R}^3$) all linear combinations of }{}
+    a.
+
+    $
+    \begin{bmatrix}
+        2 & 3\\
+        4 & 4\\
+    \end{bmatrix}
+    $
+    $
+    \begin{bmatrix}
+        1\\
+        2\\
+        3\\
+    \end{bmatrix}
+    $
+    and
+    $
+    \begin{bmatrix}
+        3\\
+        6\\
+        9\\
+    \end{bmatrix}
+    $
+    b.
+    $
+    \begin{bmatrix}
+        1\\
+        0\\
+        0\\
+    \end{bmatrix}
+    $
+    and
+    $
+    \begin{bmatrix}
+        0\\
+        2\\
+        3\\
+    \end{bmatrix}
+    $
+    c.
+    $
+    \begin{bmatrix}
+        2\\
+        0\\
+        0\\
+    \end{bmatrix}
+    $
+    and
+    $
+    \begin{bmatrix}
+        0\\
+        2\\
+        2\\
+    \end{bmatrix}
+    $
+    and
+    $
+    \begin{bmatrix}
+        2\\
+        2\\
+        3\\
+    \end{bmatrix}
+    $
+
+\end{question}
+
+\sol
+
+\subsection*{ a. }
+
+\[
+    \begin{bmatrix}
+        1\\
+        2\\
+        3\\
+    \end{bmatrix}
+    * 3 =
+    \begin{bmatrix}
+        3\\
+        6\\
+        9\\
+    \end{bmatrix}
+\]
+, line
+
+\begin{question}{5}{}
+
+\end{question}
+
+\sol
+
+\begin{gather*}
+    \mathbf{u} =
+    \begin{bmatrix}
+        1\\
+        2\\
+        3\\
+    \end{bmatrix},
+    \mathbf{v} =
+    \begin{bmatrix}
+        -3\\
+        1\\
+        -2\\
+    \end{bmatrix},
+    \mathbf{w} =
+    \begin{bmatrix}
+        2\\
+        -3\\
+        -1\\
+    \end{bmatrix} \\
+    \mathbf{u} + \mathbf{v} + \mathbf{w} =
+    \begin{bmatrix}
+        0\\
+        0\\
+        0\\
+    \end{bmatrix} \\
+    2\mathbf{u} + 2\mathbf{v} + \mathbf{w} =
+    \begin{bmatrix}
+        -2\\
+        3\\
+        1\\
+    \end{bmatrix}
+\end{gather*}
+
+c and d:
+
+\begin{gather*}
+    \begin{bmatrix}
+        2\\
+        -3\\
+        -1\\
+    \end{bmatrix} =
+    c
+    \begin{bmatrix}
+        1\\
+        2\\
+        3\\
+    \end{bmatrix} +
+    d
+    \begin{bmatrix}
+        -3\\
+        1\\
+        -2\\
+    \end{bmatrix} \\
+    c = -1, d = -1
+\end{gather*}
+
+\newpage
+
+\chapter{Problem Set 1.2}
+
+\begin{question}{1}{}
+    \begin{gather*}
+        \mathbf{u} \cdot \mathbf{v} =
+        \begin{bmatrix}
+            -2.4\\
+            2.4\\
+        \end{bmatrix}
+    \end{gather*}
+    \begin{gather*}
+        \mathbf{u} \cdot ( \mathbf{v} + \mathbf{w} ) = \\
+        =
+        \begin{bmatrix}
+            -0.6\\
+            0.8\\
+        \end{bmatrix} \cdot
+        \begin{bmatrix}
+            5\\
+            5\\
+        \end{bmatrix} \\
+        =
+        \begin{bmatrix}
+            -3\\
+            4\\
+        \end{bmatrix}
+    \end{gather*}
+\end{question}
+
+\begin{question}{2}{}
+    \begin{gather*}
+        \lVert \mathbf{u} \rVert = \sqrt{\mathbf{u} \cdot \mathbf{u}} \\
+        = \sqrt{(-0.6 * -0.6) + (0.8 * 0.8)} \\
+        = \sqrt{0.36 + 0.64} \\
+        = 1
+    \end{gather*}
+    \begin{gather*}
+        \lVert \mathbf{v} \rVert = \sqrt{(4*4) + (3 * 3)} = 5
+    \end{gather*}
+\end{question}
+
+\end{document}
