@@ -212,4 +212,31 @@ c and d:
     \end{gather*}
 \end{question}
 
+\begin{question}{4}{}
+    if the lenght of $\mathbf{v}$ is 1, $\mathbf{v}$ is a unit vector.\\
+    a.
+    \begin{gather*}
+        \vlen{\mathbf{v}} = 1 \\
+        \mathbf{v} \cdot \mathbf{v} = 1 \\
+        \leadsto \mathbf{v} \cdot \mathbf{-v} = -1
+    \end{gather*}
+    b.
+    \begin{gather*}
+        \begin{bmatrix}
+            v_0 + w_0\\
+            \vdots \\
+            v_n + w_n\\
+        \end{bmatrix} \cdot
+        \begin{bmatrix}
+            v_0 - w_0\\
+            \vdots \\
+            v_n - w_n\\
+        \end{bmatrix} = \\
+        = \sum_{i = 0}^{n} { v_0^2 - w_0^2 } \\
+        = \sum_{i = 0}^{n} { v_0^2 } - \sum_{i = 0}^{n} {
+        w_0^2 } \\
+        = \vlen{\mathbf{v}} - \vlen{\mathbf{w}} = 0
+    \end{gather*}
+\end{question}
+
 \end{document}
